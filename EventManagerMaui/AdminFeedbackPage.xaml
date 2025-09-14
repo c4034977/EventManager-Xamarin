@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventManagerMaui.AdminFeedbackPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F8FAFC">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25">
+            <!-- Header -->
+            <Grid ColumnDefinitions="*, Auto" Margin="0,0,0,20">
+                <VerticalStackLayout>
+                    <Label x:Name="EventTitleLabel" Text="Event Feedback" FontSize="32" FontAttributes="Bold" TextColor="#1E293B" />
+                    <Label Text="Reviewing attendee feedback." FontSize="16" TextColor="#64748B" />
+                </VerticalStackLayout>
+                <Button Grid.Column="1" x:Name="BackButton" Text="Back to Dashboard" BackgroundColor="Transparent" TextColor="#64748B" FontAttributes="Bold" BorderColor="#E2E8F0" BorderWidth="1" CornerRadius="20" VerticalOptions="Center"/>
+            </Grid>
+
+            <!-- Summary Card -->
+            <Border Stroke="#E2E8F0" Padding="25" Margin="0,0,0,25">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12" />
+                </Border.StrokeShape>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#4F46E5" Offset="0.1" />
+                        <GradientStop Color="#3730A3" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="5">
+                    <Label Text="Average Rating" TextColor="White" FontSize="16" Opacity="0.8" HorizontalTextAlignment="Center"/>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label x:Name="AverageRatingLabel" Text="0.0" TextColor="White" FontSize="48" FontAttributes="Bold" />
+                        <Label Text="/ 5" TextColor="White" FontSize="24" Opacity="0.7" VerticalOptions="End" Margin="5,0,0,5"/>
+                    </HorizontalStackLayout>
+                    <Label x:Name="TotalFeedbackLabel" Text="based on 0 reviews" TextColor="White" FontSize="14" Opacity="0.8" HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Feedback List -->
+            <CollectionView x:Name="FeedbackCollectionView" EmptyView="No feedback submitted for this event.">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Stroke="#E2E8F0" BackgroundColor="White" Padding="20" Margin="0,0,0,15">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="12" />
+                            </Border.StrokeShape>
+                            <VerticalStackLayout Spacing="10">
+                                <Grid ColumnDefinitions="*, Auto">
+                                    <Label Grid.Column="0" Text="{Binding Username}" FontAttributes="Bold" TextColor="#4F46E5" />
+                                    <Label Grid.Column="1" Text="{Binding CreatedAt, StringFormat='{0:MMM d, yyyy}'}" TextColor="#64748B" FontSize="12" />
+                                </Grid>
+                                <!-- Star Rating will be here -->
+                                <Label Text="{Binding Comment, StringFormat='&quot;{0}&quot;'}" FontAttributes="Italic" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

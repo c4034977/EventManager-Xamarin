@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventManagerMaui.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <!-- Grid is used to layer elements on top of each other -->
+    <Grid>
+
+        <!-- 1. The Background Image -->
+        <Image Source="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" 
+               Aspect="AspectFill" />
+
+        <!-- 2. The Color Overlay -->
+        <BoxView>
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#9914B8A6" Offset="0.1" />
+                    <GradientStop Color="#994F46E5" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <!-- 3. The Main Content -->
+        <Grid RowDefinitions="Auto, *">
+
+            <!-- Header -->
+            <HorizontalStackLayout Grid.Row="0" Padding="25, 20" Spacing="10">
+                <Label Text="Vertex Events" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="StartAndExpand" />
+                <Button x:Name="AdminLoginButton" Text="Admin Login" BackgroundColor="#44FFFFFF" TextColor="White" CornerRadius="20" FontSize="12" FontAttributes="Bold" />
+            </HorizontalStackLayout>
+
+            <!-- Main Hero Content -->
+            <VerticalStackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" Spacing="20" Padding="20,0">
+                <Label Text="Experience Events Like Never Before"
+                       TextColor="White"
+                       FontSize="48"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       LineHeight="1.1" />
+                <Label Text="THE BEST TIME TO CELEBRATE IS NOW"
+                       TextColor="White"
+                       FontSize="18"
+                       HorizontalTextAlignment="Center" />
+                <Button x:Name="GetStartedButton"
+                        Text="GET STARTED"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        BackgroundColor="Transparent"
+                        BorderColor="White"
+                        BorderWidth="2"
+                        CornerRadius="28"
+                        Padding="25,15" 
+                        Margin="0,10,0,0"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

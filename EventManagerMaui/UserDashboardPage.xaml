@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventManagerMaui.UserDashboardPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F8FAFC">
+
+    <Grid RowDefinitions="Auto, *">
+        <Grid Grid.Row="0" Padding="25,20" ColumnDefinitions="*, Auto">
+            <VerticalStackLayout>
+                <Label Text="Event Discovery" FontSize="34" FontAttributes="Bold" TextColor="#1E293B" />
+                <Label x:Name="WelcomeLabel" Text="Welcome, User!" FontSize="16" TextColor="#64748B" />
+            </VerticalStackLayout>
+            <Button Grid.Column="1" Text="Logout" Clicked="OnLogoutClicked" BackgroundColor="#FEE2E2" TextColor="#DC2626" FontAttributes="Bold" CornerRadius="20" VerticalOptions="Center"/>
+        </Grid>
+
+        <CollectionView x:Name="EventsCollectionView" Grid.Row="1" Margin="25,10" EmptyView="No events found.">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Stroke="#E2E8F0" StrokeThickness="1" Padding="20" Margin="0,0,0,15" BackgroundColor="White">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, Auto" RowSpacing="10">
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Title}" FontSize="18" FontAttributes="Bold" />
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding EventDate, StringFormat='{0:dddd, MMMM d, yyyy}'}" TextColor="#64748B" />
+
+                            <VerticalStackLayout Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" VerticalOptions="Center">
+                                <Button Text="Register" IsVisible="{Binding IsNotRegistered}" Clicked="OnRegisterClicked" BackgroundColor="#4F46E5" TextColor="White" FontAttributes="Bold" CornerRadius="20" />
+                                <!-- CONNECTING THE BUTTON'S CLICKED EVENT -->
+                                <Button Text="Leave Feedback" IsVisible="{Binding CanLeaveFeedback}" Clicked="OnLeaveFeedbackClicked" BackgroundColor="#F59E0B" TextColor="White" FontAttributes="Bold" CornerRadius="20" />
+                                <Label Text="Feedback Sent" IsVisible="{Binding HasGivenFeedback}" TextColor="#10B981" FontAttributes="Bold" VerticalOptions="Center"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net9.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EventManagerMaui
+build_property.ProjectDir = C:\Users\manis\source\repos\EventManagerMaui\EventManagerMaui\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/AdminDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.AdminDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminDashboardPage.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/AdminFeedbackPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.AdminFeedbackPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminFeedbackPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminFeedbackPage.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/AdminLoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.AdminLoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminLoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminLoginPage.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/FeedbackPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.FeedbackPage.xaml
+build_metadata.AdditionalFiles.TargetPath = FeedbackPage.xaml
+build_metadata.AdditionalFiles.RelativePath = FeedbackPage.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/manis/source/repos/EventManagerMaui/EventManagerMaui/UserDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EventManagerMaui.UserDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserDashboardPage.xaml

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventManagerMaui.FeedbackPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F8FAFC">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="15">
+            <!-- Header -->
+            <Grid ColumnDefinitions="*, Auto">
+                <VerticalStackLayout>
+                    <Label x:Name="EventTitleLabel" Text="Leave Feedback" FontSize="32" FontAttributes="Bold" TextColor="#1E293B" />
+                    <Label Text="Share your experience to help us improve." FontSize="16" TextColor="#64748B" />
+                </VerticalStackLayout>
+                <Button Grid.Column="1" x:Name="BackButton" Text="Back" BackgroundColor="Transparent" TextColor="#64748B" FontAttributes="Bold" BorderColor="#E2E8F0" BorderWidth="1" CornerRadius="20" VerticalOptions="Center"/>
+            </Grid>
+
+            <!-- Rating Section -->
+            <Border Stroke="#E2E8F0" BackgroundColor="White" Padding="20" Margin="0,20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12" />
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Your Rating" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <HorizontalStackLayout x:Name="StarRatingLayout" HorizontalOptions="Center" Spacing="10">
+                        <!-- Stars will be added here from C# code -->
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Comment Section -->
+            <Border Stroke="#E2E8F0" BackgroundColor="White" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12" />
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Comments (Optional)" FontSize="20" FontAttributes="Bold" />
+                    <Editor x:Name="CommentEditor" Placeholder="Tell us more about your experience..." HeightRequest="120" AutoSize="Disabled" />
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Submit Button -->
+            <Button x:Name="SubmitButton" Text="Submit Feedback" BackgroundColor="#4F46E5" TextColor="White" FontAttributes="Bold" CornerRadius="25" HeightRequest="50" Margin="0,20,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
